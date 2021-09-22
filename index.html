@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <title>Spotify</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -101,7 +104,9 @@
                 <div class="app__body__nav">
                     <ul class="app__body__nav__list">
                         <li class="app__body__nav__list__item">
-                            <a href="#" class="app__body__nav__list__item__link">in evidenza</a>
+                            <a href="#"
+                                class="app__body__nav__list__item__link app__body__nav__list__item__link--active">in
+                                evidenza</a>
                         </li>
                         <li class="app__body__nav__list__item">
                             <a href="#" class="app__body__nav__list__item__link">podcast</a>
@@ -121,90 +126,133 @@
                     </ul>
                 </div>
                 <div class="app__body__content">
-                    <section class="recent">
-                        <h2 class="recent__title">Recently Played</h2>
-                        <ul class="recent__list">
-                            <li class="recent__list__item">
-
-                                <img src="img/metal_lifting.jpg" alt="" class="recent__list__item__cover">
-                                <h3 class="recent__list__item__title">Heavy Metal</h3>
-                                <div class="recent__list__item__subtitle">Subtitle</div>
+                    <section class="block">
+                        <h2 class="block__title">Recently Played</h2>
+                        <div class="block__subtitle"></div>
+                        <ul class="block__list">
+                            <li class="block__list__item">
+                                <div class="block__list__item__cover">
+                                    <div class="block__list__item__cover__overlay">
+                                        <i class="block__list__item__cover__overlay__icon far fa-play-circle"></i>
+                                    </div>
+                                    <img src="img/metal_lifting.jpg" alt="Heavy Metal Cover"
+                                        class="block__list__item__cover__img">
+                                </div>
+                                <h3 class="block__list__item__title">Heavy Metal</h3>
+                                <div class="block__list__item__subtitle">Subtitle</div>
+                            </li>
+                            <li class="block__list__item">
+                                <div class="block__list__item__cover">
+                                    <div class="block__list__item__cover__overlay">
+                                        <i class="block__list__item__cover__overlay__icon far fa-play-circle"></i>
+                                    </div>
+                                    <img src="img/stranger.jpeg" alt="Stranger Things cover"
+                                        class="block__list__item__cover__img">
+                                </div>
+                                <h3 class="block__list__item__title">Stranger Things, Vol. 1 (a Netflix Original Series
+                                    Soundtrack)</h3>
+                                <div class="block__list__item__subtitle">Kyle Dixon & Michael Stein</div>
+                            </li>
+                            <li class="block__list__item">
+                                <div class="block__list__item__cover">
+                                    <div class="block__list__item__cover__overlay">
+                                        <i class="block__list__item__cover__overlay__icon far fa-play-circle"></i>
+                                    </div>
+                                    <img src="img/aquietplace.jpeg" alt="A Quiet Place cover"
+                                        class="block__list__item__cover__img">
+                                </div>
+                                <h3 class="block__list__item__title">A quiet place</h3>
+                                <div class="block__list__item__subtitle">Subtitle</div>
+                            </li>
+                            <li class="block__list__item">
+                                <div class="block__list__item__cover">
+                                    <div class="block__list__item__cover__overlay">
+                                        <i class="block__list__item__cover__overlay__icon far fa-play-circle"></i>
+                                    </div>
+                                    <img src="img/split.jpeg" alt="" class="block__list__item__cover__img">
+                                </div>
+                                <h3 class="block__list__item__title">Split</h3>
+                                <div class="block__list__item__subtitle">Subtitle</div>
+                            </li>
+                            <li class="block__list__item">
+                                <div class="block__list__item__cover">
+                                    <div class="block__list__item__cover__overlay">
+                                        <i class="block__list__item__cover__overlay__icon far fa-play-circle"></i>
+                                    </div>
+                                    <img src="img/cure.jpeg" alt="" class="block__list__item__cover__img">
+                                </div>
+                                <h3 class="block__list__item__title">A cure for wellness</h3>
+                                <div class="block__list__item__subtitle">Subtitle</div>
+                            </li>
+                            <li class="block__list__item">
+                                <div class="block__list__item__cover">
+                                    <div class="block__list__item__cover__overlay">
+                                        <i class="block__list__item__cover__overlay__icon far fa-play-circle"></i>
+                                    </div>
+                                    <img src="img/sinister.jpeg" alt="" class="block__list__item__cover__img">
+                                </div>
+                                <h3 class="block__list__item__title">Sinister</h3>
+                                <div class="block__list__item__subtitle">Subtitle</div>
                             </li>
 
                         </ul>
                     </section>
-                    <section class="recent">
-                        <h2 class="recent__title">Creato per John Doe</h2>
-                        <ul class="recent__list">
-                            <li class="recent__list__item">
-
-                                <img src="#" alt="" class="recent__list__item__cover">
-                                <h3 class="recent__list__item__title">titolo</h3>
-                                <div class="recent__list__item__subtitle"></div>
+                    <section class="block">
+                        <h2 class="block__title">Creato per John Doe</h2>
+                        <div class="block__subtitle">Più ascolti, più accurati saranno i suggerimenti</div>
+                        <ul class="block__list">
+                            <li class="block__list__item">
+                                <div class="block__list__item__cover">
+                                    <div class="block__list__item__cover__overlay">
+                                        <i class="block__list__item__cover__overlay__icon far fa-play-circle"></i>
+                                    </div>
+                                    <img src="img/radar.jpeg" alt="Release Radar Image"
+                                        class="block__list__item__cover__img">
+                                </div>
+                                <h3 class="block__list__item__title">Release Radar</h3>
+                                <div class="block__list__item__subtitle"></div>
                             </li>
-                            <li class="recent__list__item">
-                                <img src="#" alt="" class="recent__list__item__cover">
-                                <h3 class="recent__list__item__title"></h3>
-                                <div class="recent__list__item__subtitle"></div>
-                            </li>
-                            <li class="recent__list__item">
-                                <img src="#" alt="" class="recent__list__item__cover">
-                                <h3 class="recent__list__item__title"></h3>
-                                <div class="recent__list__item__subtitle"></div>
-                            </li>
-                            <li class="recent__list__item">
-                                <img src="#" alt="" class="recent__list__item__cover">
-                                <h3 class="recent__list__item__title"></h3>
-                                <div class="recent__list__item__subtitle"></div>
-                            </li>
-                            <li class="recent__list__item">
-                                <img src="#" alt="" class="recent__list__item__cover">
-                                <h3 class="recent__list__item__title"></h3>
-                                <div class="recent__list__item__subtitle"></div>
-                            </li>
-                            <li class="recent__list__item">
-                                <img src="#" alt="" class="recent__list__item__cover">
-                                <h3 class="recent__list__item__title"></h3>
-                                <div class="recent__list__item__subtitle"></div>
+                            <li class="block__list__item">
+                                <div class="block__list__item__cover">
+                                    <div class="block__list__item__cover__overlay">
+                                        <i class="block__list__item__cover__overlay__icon far fa-play-circle"></i>
+                                    </div>
+                                    <img src="img/mixdaily.jpeg" alt="Mix Image" class="block__list__item__cover__img">
+                                </div>
+                                <h3 class="block__list__item__title">Daily Mix 1</h3>
+                                <div class="block__list__item__subtitle"></div>
                             </li>
                         </ul>
                     </section>
-                    <section class="recent">
-                        <h2 class="recent__title">Artisti più popolari</h2>
-                        <ul class="recent__list">
-                            <li class="recent__list__item">
-
-                                <img src="#" alt="" class="recent__list__item__cover">
-                                <h3 class="recent__list__item__title">titolo</h3>
-                                <div class="recent__list__item__subtitle"></div>
+                    <section class="block">
+                        <h2 class="block__title">Artisti più popolari</h2>
+                        <div class="block__subtitle">Più ascolti, più accurati saranno i suggerimenti</div>
+                        <ul class="block__list">
+                            <li class="block__list__item">
+                                <div class="block__list__item__cover block__list__item__cover--circle">
+                                    <div class="block__list__item__cover__overlay">
+                                        <i class="block__list__item__cover__overlay__icon far fa-play-circle"></i>
+                                    </div>
+                                    <img src="img/youg.jpeg" alt="Lana del Rey image"
+                                        class="block__list__item__cover__img">
+                                </div>
+                                <h3 class="block__list__item__title">Lana Del Rey</h3>
+                                <div class="block__list__item__subtitle"></div>
                             </li>
-                            <li class="recent__list__item">
-                                <img src="#" alt="" class="recent__list__item__cover">
-                                <h3 class="recent__list__item__title"></h3>
-                                <div class="recent__list__item__subtitle"></div>
-                            </li>
-                            <li class="recent__list__item">
-                                <img src="#" alt="" class="recent__list__item__cover">
-                                <h3 class="recent__list__item__title"></h3>
-                                <div class="recent__list__item__subtitle"></div>
-                            </li>
-                            <li class="recent__list__item">
-                                <img src="#" alt="" class="recent__list__item__cover">
-                                <h3 class="recent__list__item__title"></h3>
-                                <div class="recent__list__item__subtitle"></div>
-                            </li>
-                            <li class="recent__list__item">
-                                <img src="#" alt="" class="recent__list__item__cover">
-                                <h3 class="recent__list__item__title"></h3>
-                                <div class="recent__list__item__subtitle"></div>
-                            </li>
-                            <li class="recent__list__item">
-                                <img src="#" alt="" class="recent__list__item__cover">
-                                <h3 class="recent__list__item__title"></h3>
-                                <div class="recent__list__item__subtitle"></div>
+                            <li class="block__list__item">
+                                <div class="block__list__item__cover block__list__item__cover--circle">
+                                    <div class="block__list__item__cover__overlay">
+                                        <i class="block__list__item__cover__overlay__icon far fa-play-circle"></i>
+                                    </div>
+                                    <img src="img/einaudi.jpeg" alt="Einaudi image"
+                                        class="block__list__item__cover__img">
+                                </div>
+                                <h3 class="block__list__item__title">Einaudi</h3>
+                                <div class="block__list__item__subtitle"></div>
                             </li>
                         </ul>
                     </section>
+
                 </div>
             </div>
 
