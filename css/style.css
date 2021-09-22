@@ -1,0 +1,114 @@
+/* HELPER */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  border: 1px solid red;
+}
+
+/* CLASSES */
+.page {
+  height: 100vh;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+}
+.app {
+  display: flex;
+  flex-direction: row;
+}
+.action-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.recent {
+}
+
+/* ELEMENTS */
+.page__main-block {
+  flex-grow: 1;
+  background-color: aqua;
+  overflow: hidden;
+}
+.page__footer-block {
+  /* padding: 20px; */
+}
+
+.app__nav {
+  /* padding: 20px; */
+
+  display: flex;
+  flex-direction: column;
+}
+.app__nav__up {
+  padding: 20px;
+}
+.app__nav__middle {
+  flex-grow: 1;
+}
+.app__nav__bottom {
+  padding: 20px;
+}
+
+.app__body {
+  flex-grow: 1;
+  background-color: blue;
+  overflow: scroll;
+
+  display: flex;
+  flex-direction: column;
+}
+.app__body__upgrade {
+  /* padding: 20px; */
+  text-align: right;
+}
+.app__body__upgrade__button {
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 15px 20px;
+  border-radius: 30px;
+}
+.app__body__nav {
+  padding: 20px;
+}
+.app__body__nav__list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.app__body__nav__list__item {
+  text-transform: uppercase;
+}
+.app__body__nav__list__item__link {
+}
+.app__body__content {
+  flex-grow: 1;
+}
+
+.action-bar__left,
+.action-bar__center,
+.action-bar__right {
+  padding: 20px;
+}
+
+.recent__title {
+}
+.recent__list {
+  list-style: none;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.recent__list__album {
+  width: calc(100% / 2);
+}
+/* MODIFIERS */
+
+/* MEDIA QUERY */ ;
