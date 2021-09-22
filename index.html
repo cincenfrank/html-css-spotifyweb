@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>Spotify</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -13,9 +14,84 @@
     <div class="page">
         <div class="page__main-block app">
             <aside class="app__nav">
-                <div class="app__nav__up"></div>
-                <div class="app__nav__middle"></div>
-                <div class="app__nav__bottom"></div>
+                <div class="app__nav__up">
+                    <a class="app__nav__up__logo">
+                        <img class="app__nav__up__logo__img-small" src="img/logo-small.svg" alt="logo small">
+                        <img class="app__nav__up__logo__img-large" src="img/logo.svg" alt="logo large">
+                    </a>
+                    <ul class="navigation-list">
+                        <li class="navigation-list__item">
+                            <a class="navigation-list__item__link" href="#">
+                                <i class="navigation-list__item__link__icon fas fa-home"></i>
+                                <span class="navigation-list__item__link__title">Home</span>
+                            </a>
+                        </li>
+                        <li class="navigation-list__item">
+                            <a class="navigation-list__item__link" href="#">
+
+                                <i class="navigation-list__item__link__icon fas fa-search"></i>
+                                <span class="navigation-list__item__link__title">Cerca</span>
+                            </a>
+                        </li>
+                        <li class="navigation-list__item">
+                            <a class="navigation-list__item__link" href="#">
+
+                                <i class="navigation-list__item__link__icon fas fa-grip-lines-vertical"></i>
+                                <span class="navigation-list__item__link__title">La tua libreria</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="app__nav__middle">
+                    <section class="playlist">
+                        <h2 class="playlist__title">Playlist</h2>
+
+                        <a href="#" class="playlist__button">Crea Playlist</a>
+                        <div>
+                            <ul class="playlist__list">
+                                <li class="playlist__list__item">
+                                    <a href="#" class="playlist__list__item__link">Nome Playlist</a>
+                                </li>
+                                <li class="playlist__list__item">
+                                    <a href="#" class="playlist__list__item__link">Nome Playlist</a>
+                                </li>
+                                <li class="playlist__list__item">
+                                    <a href="#" class="playlist__list__item__link">Nome Playlist</a>
+                                </li>
+                                <li class="playlist__list__item">
+                                    <a href="#" class="playlist__list__item__link">Nome Playlist</a>
+                                </li>
+                                <li class="playlist__list__item">
+                                    <a href="#" class="playlist__list__item__link">Nome Playlist</a>
+                                </li>
+                                <li class="playlist__list__item">
+                                    <a href="#" class="playlist__list__item__link">Nome Playlist</a>
+                                </li>
+                                <li class="playlist__list__item">
+                                    <a href="#" class="playlist__list__item__link">Nome Playlist</a>
+                                </li>
+                            </ul>
+                    </section>
+                </div>
+
+                <div class="app__nav__bottom">
+                    <ul class="navigation-list">
+                        <li class="navigation-list__item">
+                            <a class="navigation-list__item__link" href="#">
+
+                                <i class="navigation-list__item__link__icon fas fa-arrow-circle-down"></i>
+                                <span class="navigation-list__item__link__title">Installa app</span>
+                            </a>
+                        </li>
+                        <li class="navigation-list__item">
+                            <a class="navigation-list__item__link" href="#">
+
+                                <i class="navigation-list__item__link__icon fas fa-user-circle"></i>
+                                <span class="navigation-list__item__link__title">John Doe</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
 
             </aside>
             <div class="app__body">
@@ -48,39 +124,86 @@
                     <section class="recent">
                         <h2 class="recent__title">Recently Played</h2>
                         <ul class="recent__list">
-                            <li class="recent__list__album">
+                            <li class="recent__list__item">
 
-                                <img src="#" alt="" class="recent__list__album__cover">
-                                <div class="recent__list__album__title"></div>
-                                <div class="recent__list__album__artist"></div>
+                                <img src="img/metal_lifting.jpg" alt="" class="recent__list__item__cover">
+                                <h3 class="recent__list__item__title">Heavy Metal</h3>
+                                <div class="recent__list__item__subtitle">Subtitle</div>
                             </li>
-                            <li class="recent__list__album">
-                                <img src="#" alt="" class="recent__list__album__cover">
-                                <div class="recent__list__album__title"></div>
-                                <div class="recent__list__album__artist"></div>
+
+                        </ul>
+                    </section>
+                    <section class="recent">
+                        <h2 class="recent__title">Creato per John Doe</h2>
+                        <ul class="recent__list">
+                            <li class="recent__list__item">
+
+                                <img src="#" alt="" class="recent__list__item__cover">
+                                <h3 class="recent__list__item__title">titolo</h3>
+                                <div class="recent__list__item__subtitle"></div>
                             </li>
-                            <li class="recent__list__album">
-                                <img src="#" alt="" class="recent__list__album__cover">
-                                <div class="recent__list__album__title"></div>
-                                <div class="recent__list__album__artist"></div>
+                            <li class="recent__list__item">
+                                <img src="#" alt="" class="recent__list__item__cover">
+                                <h3 class="recent__list__item__title"></h3>
+                                <div class="recent__list__item__subtitle"></div>
                             </li>
-                            <li class="recent__list__album">
-                                <img src="#" alt="" class="recent__list__album__cover">
-                                <div class="recent__list__album__title"></div>
-                                <div class="recent__list__album__artist"></div>
+                            <li class="recent__list__item">
+                                <img src="#" alt="" class="recent__list__item__cover">
+                                <h3 class="recent__list__item__title"></h3>
+                                <div class="recent__list__item__subtitle"></div>
                             </li>
-                            <li class="recent__list__album">
-                                <img src="#" alt="" class="recent__list__album__cover">
-                                <div class="recent__list__album__title"></div>
-                                <div class="recent__list__album__artist"></div>
+                            <li class="recent__list__item">
+                                <img src="#" alt="" class="recent__list__item__cover">
+                                <h3 class="recent__list__item__title"></h3>
+                                <div class="recent__list__item__subtitle"></div>
                             </li>
-                            <li class="recent__list__album">
-                                <img src="#" alt="" class="recent__list__album__cover">
-                                <div class="recent__list__album__title"></div>
-                                <div class="recent__list__album__artist"></div>
+                            <li class="recent__list__item">
+                                <img src="#" alt="" class="recent__list__item__cover">
+                                <h3 class="recent__list__item__title"></h3>
+                                <div class="recent__list__item__subtitle"></div>
+                            </li>
+                            <li class="recent__list__item">
+                                <img src="#" alt="" class="recent__list__item__cover">
+                                <h3 class="recent__list__item__title"></h3>
+                                <div class="recent__list__item__subtitle"></div>
                             </li>
                         </ul>
+                    </section>
+                    <section class="recent">
+                        <h2 class="recent__title">Artisti più popolari</h2>
+                        <ul class="recent__list">
+                            <li class="recent__list__item">
 
+                                <img src="#" alt="" class="recent__list__item__cover">
+                                <h3 class="recent__list__item__title">titolo</h3>
+                                <div class="recent__list__item__subtitle"></div>
+                            </li>
+                            <li class="recent__list__item">
+                                <img src="#" alt="" class="recent__list__item__cover">
+                                <h3 class="recent__list__item__title"></h3>
+                                <div class="recent__list__item__subtitle"></div>
+                            </li>
+                            <li class="recent__list__item">
+                                <img src="#" alt="" class="recent__list__item__cover">
+                                <h3 class="recent__list__item__title"></h3>
+                                <div class="recent__list__item__subtitle"></div>
+                            </li>
+                            <li class="recent__list__item">
+                                <img src="#" alt="" class="recent__list__item__cover">
+                                <h3 class="recent__list__item__title"></h3>
+                                <div class="recent__list__item__subtitle"></div>
+                            </li>
+                            <li class="recent__list__item">
+                                <img src="#" alt="" class="recent__list__item__cover">
+                                <h3 class="recent__list__item__title"></h3>
+                                <div class="recent__list__item__subtitle"></div>
+                            </li>
+                            <li class="recent__list__item">
+                                <img src="#" alt="" class="recent__list__item__cover">
+                                <h3 class="recent__list__item__title"></h3>
+                                <div class="recent__list__item__subtitle"></div>
+                            </li>
+                        </ul>
                     </section>
                 </div>
             </div>
