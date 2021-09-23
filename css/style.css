@@ -524,16 +524,17 @@
   }
   .navigation-list__item__link--active::after {
     display: inherit;
-}
-
-@media screen and (min-width: 768px) {
-  .block__list__item {
-    width: calc(100% / 4 - var(--gap-pixel) * 3 / 4);
   }
-}
 
-@media screen and (min-width: 992px) {
-  .block__list__item {
-    width: calc(100% / 6 - var(--gap-pixel) * 5 / 6);
+  @media screen and (min-width: 768px) {
+    .block__list__item {
+      width: calc(100% / 4 - var(--gap-pixel) * 3 / 4);
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    .block__list__item {
+      width: calc(100% / 6 - var(--gap-pixel) * 5 / 6);
+    }
   }
 }
