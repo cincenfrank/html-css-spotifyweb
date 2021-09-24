@@ -520,6 +520,12 @@
   display: none;
 }
 /* MEDIA QUERY */
+@media screen and (max-height: 650px) {
+  .app__body__upgrade {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 575px) {
   .navigation-list__item__link__title,
   .playlist {
