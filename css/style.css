@@ -178,6 +178,7 @@
   text-transform: uppercase;
   padding: 10px 20px;
   border-radius: 30px;
+  font-size: 14px;
   color: var(--aside-title);
   border: 1px solid var(--aside-title);
   text-decoration: none;
@@ -201,9 +202,10 @@
 }
 .app__body__nav__list__item__link {
   color: var(--body-text);
+  font-size: 14px;
   text-decoration: none;
   display: inline-block;
-  padding: 20px 4px;
+  padding: 20px 10px;
   transition: color 0.3s;
 }
 .app__body__nav__list__item__link:hover {
@@ -228,11 +230,6 @@
   padding: 0 10px;
 }
 
-.action-bar__left,
-.action-bar__center,
-.action-bar__right {
-  /* padding: 20px; */
-}
 .action-bar__center {
   /* width: 300px; */
   width: 50%;
@@ -294,6 +291,7 @@
 .block__list__item__title {
   text-align: center;
   font-size: 17px;
+  padding: 10px 0;
 }
 .block__list__item__subtitle {
   color: var(--body-text);
@@ -301,6 +299,8 @@
   font-size: 13px;
 }
 .playlist__title {
+  text-transform: uppercase;
+  font-size: 15px;
 }
 .playlist__button {
   color: var(--aside-text);
@@ -330,8 +330,8 @@
 .playlist__list__item__link {
   text-decoration: none;
   color: var(--aside-text);
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   display: inline-block;
   font-size: 13px;
 }
@@ -354,14 +354,19 @@
 .track-info__data__album {
   font-size: 13px;
 }
+.track-info__data__album:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
 .track-info__data__title {
-  font-size: 13px;
+  font-size: 10px;
   color: var(--player-text);
 }
-.track-info__data__artist {
-  font-size: 13px;
-  color: var(--player-text);
+.track-info__data__title:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
+
 .track-info__actions {
   display: flex;
   flex-wrap: wrap;
@@ -459,7 +464,7 @@
   transition: transform 0.3s;
 }
 .player-commands__list__item:hover .player-commands__list__item__icon--big {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 .player-options__item--extended {
   flex-grow: 1;
@@ -473,7 +478,7 @@
   height: 25px;
 }
 .navigation-list__item__link__icon--small {
-  width: 20px;
+  width: 15px;
 }
 .navigation-list__item__link__title--strong {
   color: var(--aside-title);
@@ -482,6 +487,9 @@
 }
 .navigation-list__item__bottom-border {
   border-bottom: 1px solid transparent;
+}
+.navigation-list__item__link--active {
+  color: var(--aside-title);
 }
 .navigation-list__item__link--active::after {
   content: "";
