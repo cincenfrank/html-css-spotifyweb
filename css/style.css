@@ -183,9 +183,11 @@
   border: 1px solid var(--aside-title);
   text-decoration: none;
   transition: transform 0.3s;
+  animation: call-to-action 10s infinite;
 }
 .app__body__upgrade__button:hover {
   transform: scale(1.1);
+  animation: none;
 }
 .app__body__nav {
   /* padding: 20px; */
@@ -284,6 +286,7 @@
 
 .block__list__item__cover__img {
   width: 100%;
+  height: 100%;
   object-fit: cover;
   display: inline-block;
 }
@@ -544,5 +547,26 @@
     .block__list__item {
       width: calc(100% / 6 - var(--gap-pixel) * 5 / 6);
     }
+  }
+}
+
+@keyframes call-to-action {
+  0% {
+    transform: scale(1);
+  }
+  92% {
+    transform: scale(1);
+  }
+  94% {
+    transform: scale(1.1);
+  }
+  96% {
+    transform: scale(1);
+  }
+  98% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
   }
 }
