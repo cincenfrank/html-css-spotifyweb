@@ -345,7 +345,7 @@
   cursor: pointer;
 }
 .track-info__actions {
-  display: flex;
+  display: none;
   flex-wrap: wrap;
   width: 30%;
   justify-content: center;
@@ -529,6 +529,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .track-info__actions {
+    display: flex;
   }
 }
 @media screen and (min-width: 576px) {
